@@ -78,7 +78,7 @@ const managerQuestion = [
     }
 ]
 
-const menu = [
+const menuQuestion = [
     {
         type: 'list',
         name: 'nextStep',
@@ -119,7 +119,7 @@ const internQuestion = [
     }
 ]
 
-module.exports = {employeeQuestions, managerQuestion, engineerQuestion, internQuestion, menu}
+module.exports = {employeeQuestions, managerQuestion, engineerQuestion, internQuestion, menuQuestion}
 /*
 module.exports = employeeQuestions;
 module.exports = managerQuestion;

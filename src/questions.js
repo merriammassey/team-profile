@@ -36,7 +36,7 @@ const employeeQuestions = [
     },
     {
         type: 'input',
-        name: 'employee ID',
+        name: 'employeeID',
         message: 'What is the employee ID? (Required)',
         validate: idInput => {
             if (idInput) {
@@ -65,7 +65,7 @@ const employeeQuestions = [
 const managerQuestion = [
     {
         type: 'input',
-        name: 'manager office number',
+        name: 'officeNumber',
         message: 'What is the office number of the manager? (Required)',
         validate: managerOfficeInput => {
             if (managerOfficeInput) {
@@ -81,7 +81,7 @@ const managerQuestion = [
 const menu = [
     {
         type: 'list',
-        name: 'next step',
+        name: 'nextStep',
         message: 'What do you want to do next?',
         choices: ['Enter an engineer.', 'Enter an intern.', 'Finish my team.']
       },
@@ -90,7 +90,7 @@ const menu = [
 const engineerQuestion = [
     {
         type: 'input',
-        name: 'engineer github username',
+        name: 'gitHubUsername',
         message: 'What is the github username of the engineer? (Required)',
         validate: engineerGithub => {
             if (engineerGithub) {
@@ -106,7 +106,7 @@ const engineerQuestion = [
 const internQuestion = [
     {
         type: 'input',
-        name: 'intern school',
+        name: 'school',
         message: 'Where did the intern go to school? (Required)',
         validate: internSchool => {
             if (internSchool) {

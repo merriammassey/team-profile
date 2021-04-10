@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/merriammassey/team-profile/issues"
   },
-  "homepage": "https://github.com/merriammassey/team-profile#readme"
+  "homepage": "https://github.com/merriammassey/team-profile#readme",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
 }

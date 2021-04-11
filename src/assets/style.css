@@ -1,0 +1,54 @@
+:root {
+    --primary-color: white;
+    --secondary-color: #162e3b;
+    --tertiary-color: #d6cb28;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    color: var(--secondary-color);
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  #five-day, #current-conditions {
+      display: none;
+  }
+  #selected-city {
+      padding-left: 3%;
+  }
+  
+  #current-text {
+      max-width: 15%;
+  }
+  
+  #icon, h2 {
+      display: inline;
+  }
+  
+  /* HEADER / NAV BAR STYLES START */
+  
+  header {
+    padding: 20px 35px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    top: 0;
+    margin-bottom: 25px
+  }
+  
+  header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: var(--primary-color);
+  }
+
+  a {
+    color: #fff!important;
+  }

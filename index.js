@@ -5,7 +5,7 @@ const Employee = require('./lib/Employee');
 const Intern = require('./lib/Intern');
 const Engineer = require('./lib/Engineer');
 const fs = require('fs');
-//const generateHTML = require('./src/generateHTML');
+const generateHTML = require('./src/generateHTML');
 
 let team = [];
 
@@ -20,9 +20,26 @@ const menu = () => {
             }
         else {
             console.log(team);
+            writeToFile(team);
         }
     });
 }
+
+// TODO: Create a function to write README file
+const writeToFile = (data)=> {
+    return new Promise((resolve, reject) => {
+        fs.writeFile('./dist/index.html', generateHTML(data), err => {
+          if (err) {
+            reject(err);
+            return;
+          }
+          resolve({
+            ok: true,
+            message: 'File created!'
+          });
+        });
+      });
+    };
 
 const init = () => {
     //concat employeeQuestions and managerQuestion arrays
@@ -65,6 +82,16 @@ const engineer = () => {
 }
 
 let manager = init();
+
+/* writeToFile(team)
+    //alert of success or failure
+    .then(writeToFileResponse => {
+        console.log(writeToFileResponse);
+      })
+    .catch(err => {
+        console.log(err);
+      }) */
+
 
 //menu();
 

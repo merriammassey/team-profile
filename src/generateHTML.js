@@ -2,10 +2,8 @@ const team = require('../index');
 var cards = "";
 
 const renderCards = team => {
-    console.log(team);
     for (i=0; i<team.length; i++) {
         if(team[i].getRole()=== 'Manager') {
-            //console.log(team[i]);
             cards += `<!--card-->
             <div class="card text-white bg-primary mb-3" style="width: 15rem;">
                 <div class="card-header">${team[i].name}</div>
@@ -19,15 +17,14 @@ const renderCards = team => {
             `
         }
         else if (team[i].getRole()=== 'Engineer') {
-            //console.log(team[i]);
             cards +=  `<!--card-->
             <div class="card text-white bg-primary mb-3" style="width: 15rem;">
                 <div class="card-header">${team[i].name}</div>
                 <div class="card-header">${team[i].getRole()}</div>
                     <div class="card-body">
                         <p class="card-text">ID: ${team[i].employeeID}</p>
-                        <p class="card-text">Email: <a href="mailto:${team[i].email}">${team[i].email}</p>
-                        <p class="card-text">GitHub username: <a href="https://github.com/${team[i].gitHubUsername}">gitHubUsername</a></p>
+                        <p class="card-text">Email: <a href="mailto:${team[i].email}">${team[i].email}</a></p>
+                        <p class="card-text">GitHub username: <a href="https://github.com/${team[i].gitHubUsername}" target="_blank">${team[i].gitHubUsername}</a></p>
                     </div>
             </div>
           `

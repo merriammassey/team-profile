@@ -19,7 +19,6 @@ const menu = () => {
                 intern();
             }
         else {
-            console.log(team);
             writeToFile(team);
         }
     });
@@ -42,9 +41,7 @@ const writeToFile = (data)=> {
     };
 
 const init = () => {
-    //concat employeeQuestions and managerQuestion arrays
-    const managerArray = employeeQuestions.concat(managerQuestion); 
-    //collect employee
+    const managerArray = managerQuestion.concat(employeeQuestions); 
     inquirer.prompt(managerArray)
     .then(data => {
         const manager = new Manager (data.name, data.employeeID, data.email, data.officeNumber);
@@ -53,29 +50,21 @@ const init = () => {
     }) 
 }
 
-//make intern function
 const intern = () => {
-    //concat employeeQuestions and internQuestion arrays
-    const internArray = employeeQuestions.concat(internQuestion); 
-    //collect intern data
+    const internArray = internQuestion.concat(employeeQuestions); 
     inquirer.prompt(internArray)
     .then(data => {
         const intern = new Intern (data.name, data.employeeID, data.email, data.school);
-        console.log(intern);
         team.push(intern);
         menu();
     })
 }
 
-//make engineer function
 const engineer = () => {
-    //concat employeeQuestions and engineerQuestion arrays
-    const engineerArray = employeeQuestions.concat(engineerQuestion); 
-    //collect engineer
+    const engineerArray = engineerQuestion.concat(employeeQuestions); 
     inquirer.prompt(engineerArray)
     .then(data => {
         const engineer = new Engineer (data.name, data.employeeID, data.email, data.gitHubUsername);
-        console.log(engineer);
         team.push(engineer);
         menu();
     })

@@ -82,24 +82,3 @@ const engineer = () => {
 }
 
 let manager = init();
-
-/* writeToFile(team)
-    //alert of success or failure
-    .then(writeToFileResponse => {
-        console.log(writeToFileResponse);
-      })
-    .catch(err => {
-        console.log(err);
-      }) */
-
-
-//menu();
-
-/* //While loop
-while (true) {
-    if (menu()==false) {
-    writeHTML();
-    break;
-    }
-    console.log(team);
-} */

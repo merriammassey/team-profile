@@ -7,7 +7,7 @@ const renderCards = team => {
         if(team[i].getRole()=== 'Manager') {
             //console.log(team[i]);
             cards += `<!--card-->
-            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card text-white bg-primary mb-3" style="width: 15rem;">
                 <div class="card-header">${team[i].name}</div>
                 <div class="card-header">${team[i].getRole()}</div>
                     <div class="card-body">
@@ -21,7 +21,7 @@ const renderCards = team => {
         else if (team[i].getRole()=== 'Engineer') {
             //console.log(team[i]);
             cards +=  `<!--card-->
-            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card text-white bg-primary mb-3" style="width: 15rem;">
                 <div class="card-header">${team[i].name}</div>
                 <div class="card-header">${team[i].getRole()}</div>
                     <div class="card-body">
@@ -34,7 +34,7 @@ const renderCards = team => {
         }
         else {
             cards += `<!--card-->
-            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card text-white bg-primary mb-3" style="width: 15rem;">
                 <div class="card-header">${team[i].name}</div>
                 <div class="card-header">${team[i].getRole()}</div>
                     <div class="card-body">
@@ -65,8 +65,6 @@ const generateHTML = data => {
             <h1>My Team</h1>
         </header>
         <main>
-            <div class="row  justify-content-center row-cols-1 row-cols-md-4">
-                <div class="col">
                     ${renderCards(data)}
                 </div>
             </div>

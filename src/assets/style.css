@@ -1,6 +1,6 @@
 :root {
     --primary-color: white;
-    --secondary-color: #162e3b;
+    --secondary-color:red; 
     --tertiary-color: #d6cb28;
   }
   
@@ -14,21 +14,7 @@
     color: var(--secondary-color);
     font-family: Helvetica, Arial, sans-serif;
   }
-  
-  #five-day, #current-conditions {
-      display: none;
-  }
-  #selected-city {
-      padding-left: 3%;
-  }
-  
-  #current-text {
-      max-width: 15%;
-  }
-  
-  #icon, h2 {
-      display: inline;
-  }
+
   
   /* HEADER / NAV BAR STYLES START */
   
@@ -49,6 +35,15 @@
     color: var(--primary-color);
   }
 
+  main {
+    display:flex;
+    flex-direction: row!important;
+    justify-content: center;
+  }
   a {
     color: #fff!important;
+  }
+
+  .card, .row, .col {
+  margin: 1%;
   }

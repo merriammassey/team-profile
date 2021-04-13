@@ -62,9 +62,7 @@ const generateHTML = data => {
             <h1>My Team</h1>
         </header>
         <main>
-                    ${renderCards(data)}
-                </div>
-            </div>
+            ${renderCards(data)}
         </main>
     </body>
     </html>`

@@ -2,7 +2,7 @@
 
 
 ## Purpose
-This app allows the user to create from the command line a web page with team member information.
+This Node.js command-line application takes in information about employees on a software engineering team and generates an HTML webpage summarizing team member information.
 
 ## Built With
 * JavaScript

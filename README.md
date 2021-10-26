@@ -2,7 +2,7 @@
 
 
 ## Purpose
-This Node.js command-line application separates data and functionality into differnet constructor funcitons, following the Object Oriented Programming paradigm, and follows test-driven development principles. 
+This Node.js command-line application separates data and functionality into different constructor functions, following the Object Oriented Programming paradigm, and follows test-driven development principles. 
 
 The app takes in information about employees on a software engineering team and generates an HTML webpage summarizing team member information.
 

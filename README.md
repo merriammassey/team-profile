@@ -26,10 +26,11 @@ The app takes in information about employees on a software engineering team and 
 
 First, ensure [Node.js](https://nodejs.org/en/) JavaScript runtime and [npm package manager](https://www.npmjs.com/) are installed.
 
-Clone the project repo, then run the following command a terminal in the root directory:
+Clone the project repo, then run the following command in a terminal from the root directory:
 ```
 npm i
 ```
+Create a folder in the root directory called "dist".
 
 ## Usage
 
@@ -39,4 +40,3 @@ node index.js
 ```
 Answer the prompts, then find the HTML file output in the ./dist directory.
 
-### ©️2021 Merriam Massey

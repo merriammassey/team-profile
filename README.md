@@ -6,14 +6,37 @@ This Node.js command-line application separates data and functionality into diff
 
 The app takes in information about employees on a software engineering team and generates an HTML webpage summarizing team member information.
 
+## Table of Contents
+- Built With
+- Demo
+- Installation
+- Usage
+
 ## Built With
 * JavaScript
 * Node.js
 * NPM Inquirer
 * Jest
 
-## Video
+## Demo
 
 [![image](https://user-images.githubusercontent.com/77468612/114338088-3323e980-9b07-11eb-87e7-ea0fea32f01e.png)](https://youtu.be/F0PewPJ_J0Y "Video of functionality")
+
+## Installation
+
+First, ensure [Node.js](https://nodejs.org/en/) JavaScript runtime and [npm package manager](https://www.npmjs.com/) are installed.
+
+Clone the project repo, then run the following command a terminal in the root directory:
+```
+npm i
+```
+
+## Usage
+
+From a terminal in the root directory, enter;
+```
+node index.js
+```
+Answer the prompts, then find the HTML file output in the ./dist directory.
 
 ### ©️2021 Merriam Massey

@@ -7,12 +7,12 @@ This Node.js command-line application separates data and functionality into diff
 The app takes in information about employees on a software engineering team and generates an HTML webpage summarizing team member information.
 
 ## Table of Contents
-- Built With
-- Demo
-- Installation
-- Usage
+- [Tools](#tools)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
 
-## Built With
+## Tools
 * JavaScript
 * Node.js
 * NPM Inquirer
